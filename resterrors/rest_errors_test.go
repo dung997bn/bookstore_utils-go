@@ -16,6 +16,4 @@ func TestNewInternalServerError(t *testing.T) {
 	assert.EqualValues(t, "internal_server_error", err.Error)
 
 	assert.NotNil(t, err.Causes)
-	assert.EqualValues(t, 1, len(err.Causes))
-
 }
